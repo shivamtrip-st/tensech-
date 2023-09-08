@@ -3,10 +3,10 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
-// Replace with your API key from ExchangeRate-API
+
 const API_KEY = '4c6d1a79ca96ca3c0dc4eb69fac9fb81';
 
-// API endpoint for currency conversion
+
 app.get('/convert', async (req, res) => {
   const sourceCurrency = req.query.from;
   const amount = parseFloat(req.query.amount);
